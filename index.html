@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>
+</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<div id="timers">
+
+<div class="row">
+
+        <div class="col-xs-4"><button class="btn btn-default" width="20%" type ="button">Main Timer</button></div>
+        <div class="col-xs-4"><button class="btn btn-default" type ="button">Timer</button></div>
+        <div class="col-xs-4"><button class="btn btn-default" type ="button">EOD</button></div>
+</div>
+</div>
+<div id="newtimer">
+    <div class="col-xs-4">
+	<button class="btn btn-default" type="button" onClick="addRow()">+</button>
+	</div>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+<script id="hidden-template" type="text/x-custom-template">
+<div class="row" >
+<div class="col-xs-4"><button class="btn btn-default" id="edit" type="button">New Timer</button></div>
+<div class="col-xs-4"><button class="btn btn-default" id="timer" type ="button">Timer</button></div>
+<div class="col-xs-4"><button class="btn btn-default" id="lap" type="button">Lap</button></div>
+</div>
+</script>
+
+<script>
+var template = $('#hidden-template').html();
+
+function addRow()
+{
+    $('#timers').append(template);
+};
+
+function toggleTimer()
+{
+
+}
+</script>
+
+<body>
+</html>
